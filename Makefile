@@ -3,4 +3,10 @@ run-python:
 run-go:
 	go run main.go
 run-kong:
-	cd kong-gateway && docker-compose up
+	cd kong-gateway && docker-compose up -d
+stop-kong:
+	cd kong-gateway && docker-compose down
+docker-run:
+	docker-compose up -d
+docker-stop:
+	docker-compose down
