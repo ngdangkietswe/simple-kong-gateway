@@ -14,13 +14,19 @@
     make run-go
     ```
    ![](images/go.png)
-5. Run Kong Gateway:
+5. Run Flask and Golang app with Docker Compose:
+
+    ```bash
+    make docker-run
+    ```
+   ![](images/compose.png)
+6. Run Kong Gateway:
 
     ```bash
     make run-kong
     ```
    ![](images/kong.png)
-6. Http request:
+7. Http request:
 
     - Test Golang app:
         ```bash
