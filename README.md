@@ -19,7 +19,6 @@
     ```bash
     make docker-run
     ```
-   ![](images/compose.png)
 6. Run Kong Gateway:
 
     ```bash
