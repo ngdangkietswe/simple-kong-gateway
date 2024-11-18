@@ -20,7 +20,7 @@ services:
     ports:
       - "8005:8005"
     environment:
-      HOST: host.docker.internal
+      HOST: 127.0.0.1
       PORT: 5000
       JWT_SECRET: jwtsecretjwtsecretjwtsecretjwtsecret
       JWT_ISSUER: jwtissuerjwtissuerjwtissuerjwtissuer

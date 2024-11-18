@@ -2,30 +2,32 @@
 
 1. Install Docker and Docker Compose
 2. Clone this repository
-3. Run Flask app:
+3. Diagram:
+   ![](images/diagram.png)
+4. Run Flask app:
 
     ```bash
     make run-python
     ```
    ![](images/python.png)
-4. Run Golang app:
+5. Run Golang app:
 
     ```bash
     make run-go
     ```
    ![](images/go.png)
-5. Run Flask and Golang app with Docker Compose:
+6. Run Flask and Golang app with Docker Compose:
 
     ```bash
     make docker-run
     ```
-6. Run Kong Gateway:
+7. Run Kong Gateway:
 
     ```bash
     make run-kong
     ```
    ![](images/kong.png)
-7. Http request:
+8. Http request:
 
     - Test Golang app:
         ```bash
