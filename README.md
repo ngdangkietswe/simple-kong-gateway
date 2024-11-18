@@ -29,20 +29,20 @@
 
     - Test Golang app:
         ```bash
-        curl -X GET http://localhost:8005/
+        curl -X GET http://localhost:8000/
         ```
       ![](images/test-go.png)
     - Test Login:
         ```bash
-        curl -X POST http://localhost:8005/login -H "Content-Type: application/json" -d '{"username": "ngdangkietswe"}'
+        curl -X POST http://localhost:8000/login -H "Content-Type: application/json" -d '{"username": "ngdangkietswe"}'
         ```
       ![](images/test-login.png)
     - Test Flask app with Token:
         ```bash
-        curl -X GET http://localhost:8005/api/health -H "Authorization: Bearer {token}" 
+        curl -X GET http://localhost:8000/api/health -H "Authorization: Bearer {token}" 
         ```
       ![](images/test-python-health.png)
         ```bash
-        curl -X POST http://localhost:8005/api/check-authorize -H "Content-Type: application/json" -H "Authorization: Bearer {token}" -d '{"username": "ngdangkietswe"}' 
+        curl -X POST http://localhost:8000/api/check-authorize -H "Content-Type: application/json" -H "Authorization: Bearer {token}" -d '{"username": "ngdangkietswe"}' 
         ```
       ![](images/test-python-authorize.png)
