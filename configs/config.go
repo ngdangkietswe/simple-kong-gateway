@@ -1,6 +1,7 @@
 package configs
 
 import (
+	"fmt"
 	"github.com/spf13/viper"
 	"log"
 	"time"
@@ -30,6 +31,14 @@ func init() {
 	}
 
 	GlobalConfig = config
+
+	fmt.Println("\033[34m================ Loaded Configuration ================\033[0m")
+	fmt.Printf("\033[32mHost:           \033[0m%s\n", GlobalConfig.Host)
+	fmt.Printf("\033[32mPort:           \033[0m%d\n", GlobalConfig.Port)
+	fmt.Printf("\033[32mJWT Secret:     \033[0m%s\n", GlobalConfig.JwtSecret)
+	fmt.Printf("\033[32mJWT Issuer:     \033[0m%s\n", GlobalConfig.JwtIssuer)
+	fmt.Printf("\033[32mJWT Expiration: \033[0m%s\n", GlobalConfig.JwtExp)
+	fmt.Println("\033[34m=====================================================\033[0m")
 	return
 }
 

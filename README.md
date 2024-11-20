@@ -49,3 +49,8 @@
         curl -X POST http://localhost:8000/api/check-authorize -H "Content-Type: application/json" -H "Authorization: Bearer {token}" -d '{"username": "ngdangkietswe"}' 
         ```
       ![](images/test-python-authorize.png)
+<<<<<<< Updated upstream
+=======
+9. Documentation:
+    - https://docs.konghq.com/
+>>>>>>> Stashed changes
