@@ -9,9 +9,9 @@ services:
       - name: all-routes
         paths:
           - /
-  - name: login-service
-    url: http://host.docker.internal:8005/login
-    routes:
-      - name: login-route
-        paths:
-          - /login
+#  - name: login-service
+#    url: http://host.docker.internal:8005/login
+#    routes:
+#      - name: login-route
+#        paths:
+#          - /login
